@@ -1,0 +1,19 @@
+{
+  "name": "node-automatizacion",
+  "version": "1.0.0",
+  "description": "automatization",
+  "scripts": {
+    "start": "node ./src/server/config.js",
+    "nodemon": "nodemon ./src/server/config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastian Gonzalez",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/pubsub": "^2.11.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "log4js": "^6.3.0"
+  }
+}
