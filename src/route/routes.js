@@ -8,7 +8,7 @@ const { saveTopic } = require('../business/pubsub/topic');
 const { getSusbcription } = require('../business/pubsub/subscription');
 
 
-router.post('/api/v1/call',async (req, res) => {
+router.post('/api/v1/pubsub',async (req, res) => {
     try {
         let body = req.body;
         let response = await saveTopic(body);
@@ -20,7 +20,7 @@ router.post('/api/v1/call',async (req, res) => {
     }
 });
 
-router.get('/api/v1/call',async (req, res) => {
+router.get('/api/v1/pubsub',async (req, res) => {
     try {
         let message = await getSusbcription();
         res.status(200).json(message);
